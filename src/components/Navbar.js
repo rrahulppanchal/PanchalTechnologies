@@ -33,7 +33,7 @@ export default function Navbar() {
         </div>
 
         <span className="enquire">
-          <Link style={{ textDecoration: "none" }} to="services">
+          <Link style={{ textDecoration: "none" }} to="/services">
             <button className="cta">
               <span>Enquire</span>
               <svg viewBox="0 0 13 10" height="10px" width="15px">

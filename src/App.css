@@ -548,9 +548,6 @@ body {
 }
 
 @media screen and (max-width: 992px) {
-  h1 {
-    font-size: 45px !important;
-  }
   .about-container h1 {
     font-size: 22px;
     text-align: center;

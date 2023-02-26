@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import Card from "./Card";
+import OfferCard from "./OfferCard";
+
 import img from "../../assets/about-ill.webp";
 import { FaReact, FaAngular, FaNodeJs } from "react-icons/fa";
 import { SiJavascript, SiMysql, SiPostgresql } from "react-icons/si";
@@ -30,7 +32,7 @@ export default function Home() {
         </div>
         <div className="features"></div>
       </div>
-
+      <OfferCard />
       <h1 style={{ textAlign: "center", fontSize: "50px" }}>Who we are?</h1>
       <div className="home-about">
         <img draggable={false} src={img} alt="img" />

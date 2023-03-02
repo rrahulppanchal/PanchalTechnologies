@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { AiOutlineProfile } from "react-icons/ai";
 import { BsBlockquoteLeft } from "react-icons/bs";
 import { SiBmcsoftware } from "react-icons/si";
-import { HiMenuAlt2 } from "react-icons/hi";
+import { HiMenuAlt3 } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import { MdOutlineMailOutline, MdOutlineAddIcCall } from "react-icons/md";
 import { RxCrossCircled } from "react-icons/rx";
@@ -20,7 +20,7 @@ const HamburgerMenu = () => {
             onClick={() => setDisplay(!display)}
           />
         ) : (
-          <HiMenuAlt2
+          <HiMenuAlt3
             color="black"
             fontSize="2em"
             onClick={() => setDisplay(!display)}
@@ -53,7 +53,7 @@ const HamburgerMenu = () => {
           <MdOutlineAddIcCall color="black" fontSize="1.5em" />
           <a
             style={{ textDecoration: "none", color: "black" }}
-            href="tel:rahulpanchaloff@gmail.com"
+            href="tel:+916392758956"
           >
             Call Us
           </a>

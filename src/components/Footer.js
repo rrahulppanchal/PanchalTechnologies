@@ -14,19 +14,19 @@ export default function Footer() {
       <div className="footer_main">
         <div className="header">
           <h2>Header</h2> <Link style={{ textDecoration: "none" }}>Home</Link>
-          <Link to="/about" style={{ textDecoration: "none" }}>
+          <Link htmlFor="home" to="/about" style={{ textDecoration: "none" }}>
             About Us
           </Link>
           <Link to="/services" style={{ textDecoration: "none" }}>
             Our Services
           </Link>
           <Link style={{ textDecoration: "none" }}>Blogs</Link>
-          <Link
-            to="/rahulpanchaloff@gmail.com"
+          <a
             style={{ textDecoration: "none" }}
+            href="mailto:rahulpanchaloff@gmail.com"
           >
-            Contacts
-          </Link>
+            Contact
+          </a>
         </div>
         <div className="info">
           <h2>Stack Info</h2>{" "}
@@ -42,11 +42,19 @@ export default function Footer() {
           </span>
           <div className="phone">
             <BsFillTelephoneFill color="black" fontSize="1.5em" />
-            +91 6392758956
+
+            <a style={{ textDecoration: "none" }} href="tel:+91 6392758956">
+              +91 6392758956
+            </a>
           </div>
           <div className="email">
             <MdEmail color="black" fontSize="1.5em" />
-            contact@panchaltechnologies.com
+            <a
+              style={{ textDecoration: "none" }}
+              href="mailto:rahulpanchaloff@gmail.com"
+            >
+              contact@panchaltechnologies.com
+            </a>
           </div>
           <div className="email">
             <MdLocationPin color="black" fontSize="1.5em" />

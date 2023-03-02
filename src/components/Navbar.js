@@ -5,7 +5,7 @@ import HamburgerMenu from "./Hamburger";
 export default function Navbar() {
   return (
     <>
-      <div className="nav_container">
+      <div id="home" className="nav_container">
         <div className="nav_logo">
           <Link to="/">
             <img style={{ height: "60px" }} src={Logo} alt="" />
@@ -42,10 +42,9 @@ export default function Navbar() {
               </svg>
             </button>
           </Link>
+          <HamburgerMenu />
         </span>
       </div>
-
-      <HamburgerMenu />
     </>
   );
 }

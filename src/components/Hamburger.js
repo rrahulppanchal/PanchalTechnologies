@@ -4,6 +4,8 @@ import { BsBlockquoteLeft } from "react-icons/bs";
 import { SiBmcsoftware } from "react-icons/si";
 import { HiMenuAlt2 } from "react-icons/hi";
 import { Link } from "react-router-dom";
+import { MdOutlineMailOutline, MdOutlineAddIcCall } from "react-icons/md";
+import { RxCrossCircled } from "react-icons/rx";
 
 const HamburgerMenu = () => {
   const [display, setDisplay] = useState(false);
@@ -11,32 +13,60 @@ const HamburgerMenu = () => {
   return (
     <div>
       <div className="ham-icon">
-        <HiMenuAlt2
-          color="gray"
-          fontSize="2em"
-          onClick={() => setDisplay(!display)}
-        />
-        {/* <HiMenuAlt3 color="white" fontSize="2em" /> */}
+        {display ? (
+          <RxCrossCircled
+            color="black"
+            fontSize="2em"
+            onClick={() => setDisplay(!display)}
+          />
+        ) : (
+          <HiMenuAlt2
+            color="black"
+            fontSize="2em"
+            onClick={() => setDisplay(!display)}
+          />
+        )}
       </div>
       <div className={display ? "hamburger-menu-true" : "hamburger-menu-false"}>
-        <Link to="/about">
+        <Link style={{ textDecoration: "none" }} to="/about">
           <div className="hamburger-menu-line">
-            <AiOutlineProfile color="white" fontSize="1.5em" />
+            <AiOutlineProfile color="black" fontSize="1.5em" />
             About
           </div>
         </Link>
-        <Link to="/services">
+        <Link style={{ textDecoration: "none" }} to="/services">
           <div className="hamburger-menu-line">
-            <SiBmcsoftware color="white" fontSize="1.5em" />
+            <SiBmcsoftware color="black" fontSize="1.5em" />
             Services
           </div>
         </Link>
-        <Link to="https://medium.com/@rahulpanchaloff">
+        <Link
+          style={{ textDecoration: "none" }}
+          to="https://medium.com/@rahulpanchaloff"
+        >
           <div className="hamburger-menu-line">
-            <BsBlockquoteLeft color="white" fontSize="1.5em" />
+            <BsBlockquoteLeft color="black" fontSize="1.5em" />
             Blogs
           </div>
         </Link>
+        <div className="hamburger-menu-line">
+          <MdOutlineAddIcCall color="black" fontSize="1.5em" />
+          <a
+            style={{ textDecoration: "none", color: "black" }}
+            href="tel:rahulpanchaloff@gmail.com"
+          >
+            Call Us
+          </a>
+        </div>
+        <div className="hamburger-menu-line">
+          <MdOutlineMailOutline color="black" fontSize="1.5em" />
+          <a
+            style={{ textDecoration: "none", color: "black" }}
+            href="mailto:rahulpanchaloff@gmail.com"
+          >
+            Mail Us
+          </a>
+        </div>
       </div>
     </div>
   );
